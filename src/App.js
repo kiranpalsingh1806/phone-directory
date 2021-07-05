@@ -3,7 +3,22 @@ import Header from "./Header";
 import './App.css';
 
 class App extends Component{
+
   render(){
+
+    let subscribers = [
+      {
+        id:1,
+        name:"Kiranpal Singh",
+        phone: "8872185444"
+      },
+      {
+        id:2,
+        name: "Amanpal Singh",
+        phone:"9923923292"
+      }
+    ]
+
     return(
       <div>
          <Header />
@@ -14,6 +29,16 @@ class App extends Component{
             <span className="grid-item name-heading">Name</span>
             <span className="grid-item phone-heading">Phone</span>
           </div>
+
+          {
+            subscribers.map(sub => {
+              return <div key={sub.id} className="grid-container">
+              <span className="grid-item">{sub.name}</span>
+              <span className="grid-item">{sub.phone}</span>
+              </div>
+            })
+          }
+
        </div>
       </div>
       );
