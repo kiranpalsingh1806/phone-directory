@@ -17,6 +17,10 @@
     background: #7ab97a;
     color: #fff;
 }
+.delete-btn {
+    background: #ff4d4d;
+    color: #fff;
+}
 
 .grid-container {
     display: grid;
@@ -41,4 +45,4 @@
     font-weight: 600;
     color: #808080;
     text-transform: uppercase;
-} 
+}
