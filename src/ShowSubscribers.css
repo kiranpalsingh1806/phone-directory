@@ -1,9 +1,3 @@
-
-.delete-btn {
-    background: #ff4d4d;
-    color: #fff;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 40% 30% auto;
@@ -27,4 +21,9 @@
     font-weight: 600;
     color: #808080;
     text-transform: uppercase;
+}
+
+.delete-btn {
+    background: #fa9c9c;
+    color: #000;
 }
